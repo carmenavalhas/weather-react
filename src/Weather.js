@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Dna } from  'react-loader-spinner'
+import { Rings } from  'react-loader-spinner'
 
 
 export default function Weather (props) {
@@ -14,13 +14,15 @@ export default function Weather (props) {
     
   axios.get(apiUrl).then(handleResponse);
   return (
-  <Dna
-  visible={true}
+  <Rings
   height="80"
   width="80"
-  ariaLabel="dna-loading"
+  color="#E42592"
+  radius="6"
   wrapperStyle={{}}
-  wrapperClass="dna-wrapper"
+  wrapperClass=""
+  visible={true}
+  ariaLabel="rings-loading"
 />
   );
 }
